@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css'; //make obsolete
-import { FlexCol, FlexRow, Navbar, NameTag, NavList, NavItem, Bar, AvatarImg, ThumbImg, Wrapper, TagText, SuperText, SubText, Logo, SubTitle, FootTag } from './styled-components.js';
-import { HtmlP, ReactP, ProfP } from './DataSet.js';
+import { FlexCol, FlexRow, Navbar, NameTag, NavList, NavItem, Bar, AvatarImg, ThumbImg, Wrapper, TagText, SuperText, SubText, HTag, SubTitle, FootTag } from './styled-components.js';
+import { HtmlP, ReactP, UnityP, JavaP } from './DataSet.js';
 import { SiFreecodecamp } from 'react-icons/si';
 import { AiOutlineCodepen, AiOutlineGithub, AiFillLinkedin } from 'react-icons/ai';
 import { BiNews } from 'react-icons/bi';
+import { FaSteam } from 'react-icons/fa';
+import {CgGames} from 'react-icons/cg'
 import Avatar from './imgs/Me.jpg';
 import reportWebVitals from './reportWebVitals';
 
@@ -41,11 +43,11 @@ function Page() {
       <Nav viewChange={SetView} />
       <FlexCol>
         <AvatarImg src={Avatar} />
-        <TagText>Web Developer / Front End</TagText>
+        <TagText>Software Developer</TagText>
         <SuperText>
           <a target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/omid-mansour-4bbb38179/'><AiFillLinkedin/></a>
           <a target="_blank" rel="noreferrer" href='https://www.freecodecamp.org/opeth'><SiFreecodecamp/></a>
-          <a target="_blank" rel="noreferrer"><AiOutlineGithub/></a>
+          <a target="_blank" rel="noreferrer" href='https://github.com/LockHowl'><AiOutlineGithub/></a>
         </SuperText>
         
         <div id="content">
@@ -65,9 +67,9 @@ function Nav(props) {
         <NameTag>Omid Mansour</NameTag>
         <NavList>
           <NavItem><Bar/><Bar/><Bar/></NavItem>
-          <NavItem><a onClick={() => props.viewChange(1)}>About</a></NavItem>
-          <NavItem><a onClick={() => props.viewChange(2)}>Projects</a></NavItem>
-          <NavItem><a onClick={() => props.viewChange(3)}>Résumé</a></NavItem>
+          <NavItem><HTag onClick={() => props.viewChange(1)}>About</HTag></NavItem>
+          <NavItem><HTag onClick={() => props.viewChange(2)}>Projects</HTag></NavItem>
+          {/*<NavItem><HTag onClick={() => props.viewChange(3)}>Résumé</HTag></NavItem>*/}
         </NavList>
       </Navbar>
     </div>
@@ -93,7 +95,14 @@ function Projects() {
 
       <SubTitle><em>{"Unity & C#"}</em></SubTitle>
       <FlexRow>
-        {ProfP.map((e) => {
+        {UnityP.map((e) => {
+          return (<Thumbnail data={e}/>);
+        })}
+      </FlexRow>
+
+      <SubTitle><em>{"Java"}</em></SubTitle>
+      <FlexRow>
+        {JavaP.map((e) => {
           return (<Thumbnail data={e}/>);
         })}
       </FlexRow>
@@ -112,6 +121,8 @@ function Thumbnail(props) {
         {(props.data.codepen) && <a target="_blank" rel="noreferrer" style={{color: "inherit", textDecoration: "inherit"}} href={props.data.codepen}><AiOutlineCodepen style={{fontSize: "25px"}} /></a>}
         {(props.data.github) && <a target="_blank" rel="noreferrer" style={{color: "inherit", textDecoration: "inherit"}} href={props.data.github}><AiOutlineGithub style={{fontSize: "25px"}} /></a>}
         {(props.data.article) && <a target="_blank" rel="noreferrer" style={{color: "inherit", textDecoration: "inherit"}} href={props.data.article}><BiNews style={{fontSize: "25px"}} /></a>}
+        {(props.data.game) && <a target="_blank" rel="noreferrer" style={{color: "inherit", textDecoration: "inherit"}} href={props.data.game}><CgGames style={{fontSize: "25px"}} /></a>}
+        {(props.data.steam) && <a target="_blank" rel="noreferrer" style={{color: "inherit", textDecoration: "inherit"}} href={props.data.steam}><FaSteam style={{fontSize: "25px"}} /></a>}
       </div>
 
     </FlexCol>
@@ -124,16 +135,16 @@ function About() {
       <FlexCol>
       <SuperText>About Me</SuperText>
       <SubText>
-        Hello! I am Omid, a web developer. I write in JavaScript mostly, but other languages I have been exposed to include C#, C++, Java, NASM, SQL and a few others.
+        Hello! I am Omid, a software developer. I like focusing my energy on game and web development. I write in JavaScript mostly, but other languages I have been exposed to include C#, C++, Java, Python, GdScript and a few others.
         My fascination with coding started with an old Arduino I played around with in highschool. 
         I am based in Canada but have a strong desire to broaden my horizons further as I have always been in multicultured settings.
       </SubText>
       <p/>
       <SubText>  
-        My journey began with a degree in Mathematics but I had a yearning for creation versus discovery and found programming was the highlight of my experience with my BSc.
+        My journey began with a degree in Mathematics but I had a yearning for creating things and found programming was the highlight of my experience with my BSc.
         I focused my ambition on the appreciation I had for the software side of technology and pursued a Computer Science MSc. 
         I had written my thesis discussing the impact of 'Serious Games', whilst implementing one using C# and Unity. 
-        I continued with Unity and C# professionally, working on a small project for Exeter University. 
+        I continued with Unity and C# professionally, working on a research involving games development for Exeter University. 
       </SubText>
       <p/>
       <SubText>
@@ -152,4 +163,5 @@ function Resume() {
     </div>
   );
 }
+
 reportWebVitals();

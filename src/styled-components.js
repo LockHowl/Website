@@ -13,7 +13,7 @@ export const FlexRow = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     width: 95vw;
     flex-wrap: wrap;
     overflow: hidden;
@@ -64,7 +64,7 @@ export const NameTag = styled.a`
         animation: ${navbarHighlight} 0.1s linear forwards;
     }
 
-    @media (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
         margin-left: 25px;        
     }
 `;
@@ -77,7 +77,7 @@ export const Bar = styled.div`
     display: none;
     border-radius: 5px;
 
-    @media (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
         display: block;
     }
 `;
@@ -117,18 +117,21 @@ export const NavItem = styled.li`
     text-align: center;
     margin: 0 20px;
 
-    &:hover {
-        cursor: pointer;
-        animation: ${navbarHighlight} 0.1s linear forwards;
-    }
-
     @media (max-width: 768px) {
         margin: 0;
         height: ${NavMargin};
         width: 100px;
         background-color: whitesmoke;
+        
     }
 `;
+
+export const HTag = styled.a`
+    &:hover {
+        cursor: pointer;
+        animation: ${navbarHighlight} 0.1s linear forwards;
+    }
+`
 
 export const AvatarImg = styled.img`
     margin-top: 75px;
@@ -177,7 +180,7 @@ const Typing = keyframes`
         width: 0px;
     }
     to {
-        width: 180px;
+        width: 138px;
     }
 `;
 
@@ -187,7 +190,7 @@ export const TagText = styled.p`
 
     color: black;
     font-size: 15px;
-    animation: ${Typing} 1.5s steps(24, end);
+    animation: ${Typing} 1.5s steps(20, end);
     
 `;
 

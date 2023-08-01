@@ -1,5 +1,16 @@
 import Calc from './imgs/calc.png';
 import Sheep from './imgs/sheep.png';
+import Poke from './imgs/Poke.jpg';
+import Woolly from './imgs/Woolly.png';
+import News from './imgs/News.png';
+import LockHowl from './imgs/LockHowl.jpg'
+import Relics from './imgs/100relics.png'
+import Cardiff from './imgs/Cardiff.png'
+import GE from './imgs/GE.png'
+import Wordle from './imgs/Wordle.png'
+import Todo from './imgs/Todo.jpg'
+
+import Paper from './paper/c1953084_CMT400.pdf'
 
 export const HtmlP = [
     {
@@ -64,14 +75,73 @@ export const ReactP = [
         description: "25+5 Pomodoro Clock",
         link: "https://codepen.io/Opeth/full/eYepRKd",
         codepen: "https://codepen.io/Opeth/pen/eYepRKd"
+    },
+    {
+        img: Poke,
+        description: "Pokedex Search",
+        link: "https://lockhowl.github.io/axios-test/",
+        article: "https://lockhowl.github.io/axios-test/"
+    },
+    {
+        img: GE,
+        description: "Grand Exchange Margins (Runescape 3)",
+        link: "https://lockhowl.github.io/ge-margins//",
+        article: "https://lockhowl.github.io/ge-margins/"
+    },
+    {
+        img: Todo,
+        description: "A Todo list widget",
+        link: "https://lockhowl.github.io/TODO/",
+        article: "https://lockhowl.github.io/TODO/"
+    },
+    {
+        img: Wordle,
+        description: "A Wordle Clone",
+        link: "https://lockhowl.github.io/WordleClone/",
+        article: "https://lockhowl.github.io/WordleClone/"
     }
 ]
 
-export const ProfP = [
+export const UnityP = [
+    {
+        img: Cardiff,
+        description: "Serious Games (MSc Paper)",
+        link: Paper,
+        article: Paper
+    },
+    {
+        img: Woolly,
+        description: "Where's Woolly (MSc Game Project)",
+        link: "https://wheres-woolly.itch.io/wheres-woolly",
+        game: "https://wheres-woolly.itch.io/wheres-woolly"
+    },
     {
         img: Sheep,
-        description: "Sheep Lameness Project (Game)",
+        description: "The Lameness Game (Professional Research Game)",
+        link: "https://wheres-woolly.itch.io/lameness-game",
+        game: "https://wheres-woolly.itch.io/lameness-game"
+    },
+    {
+        img: News,
+        description: "The Lameness Game (News)",
         link: "https://www.itv.com/news/westcountry/2021-06-24/lame-sheep-game-exeter-research-helps-fight-global-superbug-problem",
         article: "https://www.itv.com/news/westcountry/2021-06-24/lame-sheep-game-exeter-research-helps-fight-global-superbug-problem"
+    },
+
+]
+
+export const JavaP = [
+    {
+        img: LockHowl,
+        description: "LockHowl's Mod (Slay the Spire Mod)",
+        link: "https://steamcommunity.com/sharedfiles/filedetails/?id=2804385548",
+        steam: "https://steamcommunity.com/sharedfiles/filedetails/?id=2804385548"
+    },
+    {
+        img: Relics,
+        description: "100 Relics Mod (Slay the Spire Mod)",
+        link: "https://steamcommunity.com/sharedfiles/filedetails/?id=2906600896",
+        steam: "https://steamcommunity.com/sharedfiles/filedetails/?id=2906600896"
     }
 ]
+//GODOT project
