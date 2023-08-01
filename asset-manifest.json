@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Website/static/css/main.98487a90.css",
-    "main.js": "/Website/static/js/main.8d257ba5.js",
+    "main.js": "/Website/static/js/main.91a39937.js",
     "static/js/787.0c3f432a.chunk.js": "/Website/static/js/787.0c3f432a.chunk.js",
     "static/media/c1953084_CMT400.pdf": "/Website/static/media/c1953084_CMT400.22e12e45045b02a08695.pdf",
     "static/media/Woolly.png": "/Website/static/media/Woolly.f9fc8276bdd09606dca6.png",
@@ -9,17 +9,19 @@
     "static/media/sheep.png": "/Website/static/media/sheep.fbe403a4e0ed090079b9.png",
     "static/media/100relics.png": "/Website/static/media/100relics.e75c5d68c07d6f5d4231.png",
     "static/media/GE.png": "/Website/static/media/GE.c512406d57b98a41e2dd.png",
+    "static/media/Todo.jpg": "/Website/static/media/Todo.b40aac6f8b01b888f8b9.jpg",
     "static/media/Cardiff.png": "/Website/static/media/Cardiff.6170fbb98287684d6fa9.png",
     "static/media/Poke.jpg": "/Website/static/media/Poke.d8a337514c54902d2dc0.jpg",
     "static/media/LockHowl.jpg": "/Website/static/media/LockHowl.ae7d55c5bc809f0a688e.jpg",
     "static/media/Me.jpg": "/Website/static/media/Me.defe44042051037b3cc5.jpg",
+    "static/media/Wordle.png": "/Website/static/media/Wordle.2ad06d795e7c53a7c695.png",
     "index.html": "/Website/index.html",
     "main.98487a90.css.map": "/Website/static/css/main.98487a90.css.map",
-    "main.8d257ba5.js.map": "/Website/static/js/main.8d257ba5.js.map",
+    "main.91a39937.js.map": "/Website/static/js/main.91a39937.js.map",
     "787.0c3f432a.chunk.js.map": "/Website/static/js/787.0c3f432a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.98487a90.css",
-    "static/js/main.8d257ba5.js"
+    "static/js/main.91a39937.js"
   ]
 }
