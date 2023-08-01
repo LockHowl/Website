@@ -152,5 +152,4 @@ function Resume() {
     </div>
   );
 }
-
 reportWebVitals();
